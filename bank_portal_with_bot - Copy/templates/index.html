@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Python Bank</title>
+  <style>
+    :root{
+      --navy:#1a3c6c;
+      --navy-2:#2e5a9a;
+      --accent:#5b7cff;
+      --bg:#f0f4f8;
+      --card:#ffffff;
+    }
+
+    html,body { height:100%; margin:0; background: linear-gradient(180deg,var(--bg),#eef6fb); font-family:Inter,Segoe UI,Helvetica,Arial; display:flex; align-items:center; justify-content:center; }
+
+    .hero { text-align:center; }
+    .center-logo {
+      width:680px;
+      height:680px;
+      object-fit:contain;
+      margin:0 auto 28px;
+      transform:scale(0.85);
+      animation: zoomIn 0.9s cubic-bezier(.2,.9,.2,1) forwards;
+    }
+    @keyframes zoomIn{ to{ transform:scale(1); } }
+
+    .cta{ display:flex; gap:16px; justify-content:center; }
+    .btn{
+      padding:16px 32px; border-radius:12px; font-weight:700; cursor:pointer; border:0; font-size:16px; box-shadow:0 8px 30px rgba(17,24,39,0.06); transition:transform .12s
+    }
+    .btn:hover{ transform:translateY(-3px); }
+    .btn-primary{ background:linear-gradient(90deg,var(--navy-2),var(--accent)); color:#fff; }
+    .btn-outline{ background:var(--card); color:var(--navy); }
+
+    @media (max-width:680px){
+      .center-logo{ width:380px; height:380px; }
+      .btn{ padding:14px 24px; font-size:15px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <img src="{{ url_for('static', filename='bank_zoom.png') }}" alt="Python Bank" class="center-logo" onerror="this.style.display='none'">
+    <div class="cta">
+      <button class="btn btn-primary" onclick="location.href='{{ url_for('login') }}'">Login</button>
+      <button class="btn btn-outline" onclick="location.href='{{ url_for('register') }}'">Register</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* CENTER EVERYTHING */
+.home-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ANIMATED HIGHLIGHTED TEXT */
+.welcome-text {
+    font-size: 42px;
+    font-weight: 900;
+    color: #003d99;
+    text-shadow: 0 0 15px rgba(0, 140, 255, 0.8), 0 0 25px rgba(0, 140, 255, 0.5);
+    margin-bottom: 25px;
+    animation: textGlow 2s infinite alternate ease-in-out;
+}
+
+@keyframes textGlow {
+    0% {
+        text-shadow: 0 0 10px #008cff, 0 0 20px #66bfff;
+    }
+    100% {
+        text-shadow: 0 0 25px #4da6ff, 0 0 40px #99ccff;
+    }
+}
+
+/* CENTERED IMAGE + REDUCED SIZE + ZOOM ANIMATION */
+.home-image {
+    width: 600px;            /* Slightly reduced size */
+    max-width: 85%;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+
+    animation: zoomInOut 4s infinite ease-in-out;
+}
+
+@keyframes zoomInOut {
+    0% { transform: scale(0.95); }
+    50% { transform: scale(1); }
+    100% { transform: scale(0.95); }
+}
+
+/* BUTTONS CENTER */
+.btn-group-main {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.btn-main {
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+

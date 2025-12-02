@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>User Details</title>
+  <style>
+    :root{ --navy:#1a3c6c; --navy-2:#2e5a9a; --accent:#5b7cff; --bg:#f0f4f8; --card:#fff; --text:#333; --muted:#6b7280; }
+    html,body{ height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#eef6fb); font-family:Inter,Segoe UI,Arial; color:var(--text); display:flex; align-items:center; justify-content:center; padding:20px; }
+    .container{ width:100%; max-width:580px; }
+    .card{ background:var(--card); border-radius:14px; padding:32px; box-shadow:0 20px 50px rgba(10,20,40,0.08); }
+    h1{ margin:0 0 24px; color:var(--navy); font-size:26px; text-align:center; }
+    .detail-row{ display:flex; justify-content:space-between; align-items:center; padding:14px 0; border-bottom:1px solid #eef3fb; }
+    .detail-row:last-child{ border-bottom:none; }
+    .detail-label{ color:var(--muted); font-size:14px; font-weight:600; }
+    .detail-value{ color:var(--navy); font-size:16px; font-weight:700; }
+    .detail-value.highlight{ background:linear-gradient(90deg,var(--navy-2),var(--accent)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+    .btn-group{ display:flex; gap:12px; margin-top:22px; }
+    .btn{ flex:1; padding:12px; border-radius:12px; font-weight:700; border:0; cursor:pointer; font-size:14px; transition:transform .12s; }
+    .btn:hover{ transform:translateY(-2px); }
+    .btn-primary{ background:linear-gradient(90deg,var(--navy-2),var(--accent)); color:#fff; }
+    .btn-secondary{ background:#f0f3f8; color:var(--navy); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Your Account Details</h1>
+
+      <div class="detail-row">
+        <div class="detail-label">Full Name</div>
+        <div class="detail-value">{{ user.username }}</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-label">Email Address</div>
+        <div class="detail-value">{{ user.email }}</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-label">Account Number</div>
+        <div class="detail-value highlight">{{ user.account_number }}</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-label">Account Type</div>
+        <div class="detail-value">{{ user.account_type | capitalize }}</div>
+      </div>
+
+      <div class="detail-row">
+        <div class="detail-label">Available Balance</div>
+        <div class="detail-value highlight">₹ {{ user.balance }}</div>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn btn-primary" onclick="location.href='{{ url_for('dashboard') }}'">Dashboard</button>
+        <button class="btn btn-secondary" onclick="location.href='{{ url_for('check_balance') }}'">Check Balance</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

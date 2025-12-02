@@ -1,0 +1,108 @@
+text,intent,response
+hi,greet,👋 Hello! How can I help you today?
+hello,greet,👋 Hi there! What can I do for you?
+hey,greet,👋 Hey! How can I assist you?
+good morning,greet,Good morning! How may I help you?
+good afternoon,greet,Good afternoon! How can I help you?
+good evening,greet,Good evening! What can I do for you?
+
+check my balance,check_balance,💰 Sure! What's your account number?
+balance,check_balance,Please provide your account number to check balance.
+my balance,check_balance,Please share your account number for verification.
+account balance check,check_balance,Provide your account number to continue.
+
+it's 123456789,provide_account_number,💰 Your balance is 5000.
+my account number is 123456789,provide_account_number,💰 Your balance is 5000.
+account number 123456789,provide_account_number,💰 Your balance is 5000.
+verify account 123456789,provide_account_number,💰 Your balance is 5000.
+
+loan,loan_menu,We offer Education Loan, Home Loan, Personal Loan and Gold Loan. Which one do you need?
+loans,loan_menu,We offer Education Loan, Home Loan, Personal Loan and Gold Loan. Please choose one.
+i want loan,loan_menu,We provide Education, Home, Personal and Gold loans. Which loan are you interested in?
+give me loan options,loan_menu,Loan types: Education, Home, Personal, Gold. Choose one.
+
+education loan,loan_type_education,For Education Loan, do you want details or apply?
+edu loan,loan_type_education,For Education Loan, do you want details or apply?
+student loan,loan_type_education,Do you want Education Loan details or want to apply?
+
+education loan details,loan_edu_details,📘 Education Loan: Low interest, long tenure up to 10 years, covers tuition & hostel fees.
+details of education loan,loan_edu_details,📘 Education Loan details: Low interest, easy approval & long repayment time.
+tell me about education loan,loan_edu_details,📘 Education Loan helps students with fees, books, hostel & travel.
+
+apply for education loan,loan_edu_apply,Please provide Name, Age, Course, Required Amount and Documents to apply.
+apply education loan,loan_edu_apply,Provide Name, Age, Course, Loan Amount & Documents.
+i want to apply education loan,loan_edu_apply,Please share your personal details & course details to proceed.
+
+home loan,loan_type_home,For Home Loan, do you want details or apply?
+housing loan,loan_type_home,Do you want Home Loan details or apply?
+house loan,loan_type_home,Do you want details about Home Loan or apply?
+
+home loan details,loan_home_details,🏠 Home Loan: Low EMI, tenure up to 30 years, quick approval.
+details of home loan,loan_home_details,🏠 Home Loan details: Long repayment, flexible EMI, low interest.
+tell me about home loan,loan_home_details,🏠 Home Loan covers purchase, construction & renovation.
+
+apply home loan,loan_home_apply,Please provide Name, Income, Property Details, Amount and Documents.
+apply for home loan,loan_home_apply,Share Name, Income, Property Details & Required Loan Amount.
+i want to apply home loan,loan_home_apply,Please provide your income & property details to continue.
+
+personal loan,loan_type_personal,For Personal Loan, do you want details or apply?
+pl loan,loan_type_personal,Do you need details for Personal Loan or want to apply?
+salary loan,loan_type_personal,Would you like Personal Loan details or apply?
+
+personal loan details,loan_personal_details,💼 Personal Loan: No collateral, fast approval, up to 5 lakh limit.
+details of personal loan,loan_personal_details,💼 Personal Loan offers instant approval with minimal documentation.
+tell me about personal loan,loan_personal_details,💼 Personal Loan can be used for travel, medical or emergency needs.
+
+apply personal loan,loan_personal_apply,Provide Name, Salary, PAN, Required Amount and Documents.
+apply for personal loan,loan_personal_apply,Provide Name, Income, Loan Amount & Documents.
+i want personal loan apply,loan_personal_apply,Please share your salary slip & PAN to continue.
+
+gold loan,loan_type_gold,For Gold Loan, do you want details or apply?
+gl loan,loan_type_gold,Gold Loan: Do you want details or apply?
+gold jewellery loan,loan_type_gold,Do you want Gold Loan details or apply?
+
+gold loan details,loan_gold_details,🏅 Gold Loan: Low interest, instant money based on gold purity.
+details of gold loan,loan_gold_details,🏅 Gold Loan details: Quick processing & low documents.
+tell me about gold loan,loan_gold_details,🏅 Gold Loan gives money based on gold weight & purity.
+
+apply gold loan,loan_gold_apply,Provide Name, Gold Weight, Purity & ID proof.
+apply for gold loan,loan_gold_apply,Please share gold details & ID proof to apply.
+i want to apply gold loan,loan_gold_apply,Provide gold purity & your identity proof to proceed.
+
+cards,cards_menu,Do you need Credit Card or Debit Card?
+card,cards_menu,Do you want Credit Card or Debit Card?
+i want card,cards_menu,We offer Debit Card & Credit Card. Which one do you need?
+
+credit card,card_type_credit,Credit Card: You can check limit, apply or get card details.
+credit,card_type_credit,Do you want to check limit, apply or get credit card details?
+
+credit card details,credit_details,💳 Credit Card: Rewards, cashback, EMI options.
+details of credit card,credit_details,💳 Credit Card gives high limit & secure payments.
+tell me about credit card,credit_details,💳 Credit Card offers perks, reward points & discounts.
+
+apply credit card,credit_apply,Please provide Name, Salary, PAN & Address for credit card application.
+apply for credit card,credit_apply,Share Name, Income & Address to apply for credit card.
+i want to apply credit card,credit_apply,Please provide your PAN & salary slip to continue.
+
+check credit card limit,credit_limit,Your credit card limit is ₹75,000.
+credit limit,credit_limit,Your available credit limit is ₹75,000.
+my credit card limit,credit_limit,Your credit limit is ₹75,000.
+
+debit card,card_type_debit,Debit Card: You can block card, apply or get card details.
+debit,card_type_debit,Do you want to block card, apply or check debit card details?
+
+debit card details,debit_details,🏧 Debit Card: ATM withdrawals, online payments, secure PIN.
+details of debit card,debit_details,🏧 Debit Card offers secure ATM & online transactions.
+tell me about debit card,debit_details,🏧 Debit Card allows easy purchases & ATM withdrawals.
+
+apply debit card,debit_apply,Provide Name, Account Number & Address to apply.
+apply for debit card,debit_apply,Share Name, Account No. & Address.
+i want debit card apply,debit_apply,Please provide your account number to apply.
+
+block debit card,debit_block,Your debit card is temporarily blocked. Contact support to unblock.
+block my debit card,debit_block,Your debit card has been blocked successfully.
+lost my debit card,debit_block,Your card is blocked for security reasons.
+
+who are you,out_of_scope,🤔 Sorry, I don’t have an answer for that question.
+tell me a joke,out_of_scope,🤔 Sorry, I don’t have an answer for that question.
+what is your name,out_of_scope,🤔 Sorry, I don’t have an answer for that question.

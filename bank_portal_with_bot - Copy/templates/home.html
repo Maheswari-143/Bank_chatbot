@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="home-wrapper">
+
+    <!-- Highlighted Welcome Text -->
+    <div class="welcome-text">
+        Welcome to Python Bank
+    </div>
+
+    <!-- Centered Image -->
+    <img src="{{ url_for('static', filename='bank_zoom.png') }}" class="home-image">
+
+    <!-- Login & Register Buttons -->
+    <div class="btn-group-main">
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-main">Login</a>
+        <a href="{{ url_for('register') }}" class="btn btn-light border btn-main">Register</a>
+    </div>
+
+</div>
+
+{% endblock %}

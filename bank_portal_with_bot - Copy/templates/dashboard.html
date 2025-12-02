@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dashboard</title>
+  <style>
+    :root{ --navy:#1a3c6c; --navy-2:#2e5a9a; --navy-2-hover:#4571b0; --bg:#f0f4f8; --card:#fff; --text:#333; --muted:#6b7280; --accent:#5b7cff; }
+    html,body{ height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#eef6fb); font-family:Inter,Segoe UI,Arial; color:var(--text); }
+    .topbar{ background:var(--navy); color:#fff; padding:12px 20px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 8px 30px rgba(17,24,39,0.12); position:sticky; top:0; z-index:10; }
+    .topbar .menu a{ color:#fff; text-decoration:none; padding:8px 12px; border-radius:8px; margin-left:8px; background:linear-gradient(180deg,var(--navy-2),var(--navy)); transition:background .12s ease }
+    .topbar .menu a:hover{ background:var(--navy-2-hover); }
+    .user-chip{ background:#ffffff10; padding:8px 12px; border-radius:999px; font-weight:700; color:#fff; }
+
+    .layout{ display:flex; gap:18px; padding:26px; }
+    .main{ flex:1; }
+    .profile-card{ background:var(--card); border-radius:12px; padding:18px; box-shadow:0 18px 50px rgba(11,20,40,0.06); margin-bottom:18px; display:flex; justify-content:space-between; align-items:center; }
+    .profile-left{ display:flex; flex-direction:column; }
+    .profile-balance{ font-size:20px; color:var(--navy); font-weight:800; }
+
+    .chatbot-panel{ width:320px; background:var(--card); border-radius:12px; box-shadow:0 18px 50px rgba(11,20,40,0.06); display:flex; flex-direction:column; overflow:hidden; }
+    .chatbot-header{ background:linear-gradient(90deg,var(--navy-2),var(--navy)); color:#fff; padding:14px; display:flex; align-items:center; gap:10px; font-weight:700; }
+    .chat-box{ padding:14px; height:520px; overflow:auto; background:linear-gradient(180deg,#fbfdff,#f7fbff); display:flex; flex-direction:column; gap:12px; }
+    .bot-bubble{ max-width:86%; background:#f1f5ff; color:var(--navy); padding:10px 14px; border-radius:12px; }
+    .user-bubble{ max-width:78%; align-self:flex-end; background:linear-gradient(90deg,var(--navy-2),var(--accent)); color:#fff; padding:10px 14px; border-radius:12px; }
+
+    .intent-badge{ display:inline-block; padding:6px 10px; border-radius:999px; color:#fff; font-weight:700; font-size:12px; margin-top:6px; }
+
+    @media (max-width:960px){ .layout{ flex-direction:column; } .chatbot-panel{ width:100%; height:auto; } }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div style="display:flex;gap:12px;align-items:center">
+      <img src="{{ url_for('static', filename='bank_zoom.png') }}" alt="logo" style="height:40px; object-fit:contain" onerror="this.style.display='none'">
+      <div class="user-chip">{{ username }}</div>
+    </div>
+    <div class="menu">
+      <a href="{{ url_for('dashboard') }}">Dashboard</a>
+      <a href="{{ url_for('user_details') }}">Profile</a>
+      <a href="{{ url_for('check_balance') }}">Balance</a>
+      <a href="{{ url_for('other_services') }}">Services</a>
+      <a href="{{ url_for('logout') }}" style="background:#ffefef;color:#c00;padding:8px 12px;border-radius:8px">Logout</a>
+    </div>
+  </div>
+
+  <div class="layout">
+    <div class="main">
+      <div class="profile-card">
+        <div class="profile-left">
+          <div style="color:var(--muted)">Account Number</div>
+          <div class="profile-balance">{{ account_number }}</div>
+        </div>
+        <div style="text-align:right">
+          <div style="color:var(--muted)">Available Balance</div>
+          <div class="profile-balance">₹{{ balance }}</div>
+        </div>
+      </div>
+
+      <div class="content-box">
+        <h3>🎯 Quick Actions</h3>
+        <p>Select an option from the menu on the left to manage your account.</p>
+        <p>💬 Use the Bank Chatbot on the right to ask questions about your account and banking services.</p>
+        <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #e0e0e0; color: #999; font-size: 13px;">The chatbot can help you with: balance inquiries, transactions, loans, cards, transfers, and more.</p>
+      </div>
+    </div>
+
+    <div class="chatbot-panel">
+      <div class="chatbot-header">
+        <img src="{{ url_for('static', filename='bank_zoom.png') }}" alt="logo" style="height:22px; object-fit:contain" onerror="this.style.display='none'">
+        Bank Bot Assistant
+      </div>
+      <div class="chat-box" id="chatBox">
+        <!-- messages -->
+      </div>
+      <div style="padding:12px; border-top:1px solid #eef3fb">
+        <div style="display:flex; gap:8px">
+          <input id="userInput" placeholder="Ask about balance, transfers..." style="flex:1;padding:10px;border-radius:10px;border:1px solid #eef3fb">
+          <button onclick="sendMessage()" style="padding:10px 14px;border-radius:10px;background:var(--navy-2);color:#fff;border:none">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('userInput');
+      const message = input.value.trim();
+      if (!message) return;
+      
+      const chatBox = document.getElementById('chatBox');
+      
+      // Add user message
+      const userDiv = document.createElement('div');
+      userDiv.className = 'message user-msg';
+      userDiv.innerHTML = `<div class="user-bubble">You: ${escapeHtml(message)}</div>`;
+      chatBox.appendChild(userDiv);
+      
+      input.value = '';
+      chatBox.scrollTop = chatBox.scrollHeight;
+      
+      // Send to server
+      fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: message })
+      })
+      .then(r => r.json())
+      .then(data => {
+        const botDiv = document.createElement('div');
+        botDiv.className = 'message bot-msg';
+        botDiv.innerHTML = `
+          <div class="bot-bubble">Bot: ${escapeHtml(data.reply)}</div>
+          <div class="intent-badge" style="background-color: ${data.intent_color}">Intent: ${data.intent}</div>
+        `;
+        chatBox.appendChild(botDiv);
+        chatBox.scrollTop = chatBox.scrollHeight;
+      });
+    }
+    
+    function escapeHtml(text) {
+      const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    }
+    
+    document.getElementById('userInput').addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') sendMessage();
+    });
+  </script>
+</body>
+</html>

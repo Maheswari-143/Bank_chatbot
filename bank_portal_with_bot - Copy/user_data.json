@@ -1,0 +1,652 @@
+{
+  "2": {
+    "account_number": "949254126395",
+    "balance": 5000.0,
+    "conversations": [
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "cards",
+        "bot": "\ud83d\udcb3 You can manage your cards on the 'Cards' page.",
+        "intent": "card_inquiry"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "transfer",
+        "bot": "\ud83d\udcb8 OK, let's send some money. Who should I send it to?",
+        "intent": "transfer_money"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "what 's my balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it 's 949254126395",
+        "bot": "",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126395",
+        "bot": "",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126395",
+        "bot": "",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126395",
+        "bot": "",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 9492541263",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "cards",
+        "bot": "\ud83d\udcb3 You can manage your cards on the 'Cards' page.",
+        "intent": "card_inquiry"
+      },
+      {
+        "user": "debit card",
+        "bot": "\ud83d\udea8 Block your card immediately from the 'Cards' page or by calling our helpline.",
+        "intent": "block_card"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126395",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      }
+    ],
+    "amount": "5000",
+    "person": "it",
+    "last_amount": "5000",
+    "last_recipient": "it"
+  },
+  "3": {
+    "account_number": "949254126359",
+    "balance": 5000.0,
+    "conversations": [
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "its 949254126359",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "cards",
+        "bot": "\ud83d\udcb3 You can manage your cards on the 'Cards' page.",
+        "intent": "card_inquiry"
+      },
+      {
+        "user": "block card",
+        "bot": "\ud83d\udea8 Block your card immediately from the 'Cards' page or by calling our helpline.",
+        "intent": "block_card"
+      },
+      {
+        "user": "good bye",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How can I assist?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "cards",
+        "bot": "\ud83d\udcb3 You can manage your cards on the 'Cards' page.",
+        "intent": "card_inquiry"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "transfer",
+        "bot": "\ud83d\udcb8 OK, let's send some money. Who should I send it to?",
+        "intent": "transfer_money"
+      },
+      {
+        "user": "teja",
+        "bot": "\ud83d\udcb0 Your balance is 500.",
+        "intent": "transfer_money"
+      },
+      {
+        "user": "bye",
+        "bot": "\ud83d\udc4b Goodbye! Have a great day.",
+        "intent": "goodbye"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "balance",
+        "bot": "\ud83d\udcb0 I can help with that. First, please provide your account number for verification.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "card",
+        "bot": "\ud83d\udea8 Block your card immediately from the 'Cards' page or by calling our helpline.",
+        "intent": "block_card"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "debit card",
+        "bot": "\ud83d\udea8 Block your card immediately from the 'Cards' page or by calling our helpline.",
+        "intent": "block_card"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "cards",
+        "bot": "\ud83d\udcb3 You can manage your cards on the 'Cards' page.",
+        "intent": "card_inquiry"
+      },
+      {
+        "user": "send",
+        "bot": "\ud83d\udcb8 Happy to help with that. What is the name of the recipient?",
+        "intent": "transfer_money"
+      },
+      {
+        "user": "teja",
+        "bot": "\ud83d\udcb0 Your balance is 500.",
+        "intent": "transfer_money"
+      },
+      {
+        "user": "check blance",
+        "bot": "\ud83d\udcb0 Of course. What is your account number?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "949254126395",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "its 949254126395",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loans",
+        "bot": "",
+        "intent": "We provide the following loans: Education Loan, Personal Loan, Home Loan, and Gold Loan. Please choose one to proceed: Education Loan, Personal Loan, Home Loan, or Gold Loan."
+      },
+      {
+        "user": "eductaion loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "Education Lan",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "education loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "hi",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "check my balance",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "hi",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loans",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "personal loan",
+        "bot": "\ud83c\udfe6 Our Personal Loan has flexible repayment options. Learn more on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "cards",
+        "bot": "\ud83d\udcb3 You can manage your cards on the 'Cards' page.",
+        "intent": "card_inquiry"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number so I can verify?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "check_balance"
+      },
+      {
+        "user": "loans",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "loan",
+        "bot": "\ud83c\udfe6 We offer Personal and Home Loans. You can explore options on the 'Loans' page.",
+        "intent": "loan_inquiry"
+      },
+      {
+        "user": "hi",
+        "bot": "\ud83d\udc4b Hello! How can I help you today?",
+        "intent": "greet"
+      },
+      {
+        "user": "good morning",
+        "bot": "Good morning! How may I help you?",
+        "intent": "greet"
+      },
+      {
+        "user": "check my balance",
+        "bot": "\ud83d\udcb0 Sure! What's your account number?",
+        "intent": "check_balance"
+      },
+      {
+        "user": "it's 949254126359",
+        "bot": "\ud83d\udcb0 Your balance is 5000.",
+        "intent": "provide_account_number"
+      },
+      {
+        "user": "loan",
+        "bot": "We offer Education Loan",
+        "intent": "loan_menu"
+      },
+      {
+        "user": "loans",
+        "bot": "We offer Education Loan",
+        "intent": "loan_menu"
+      },
+      {
+        "user": "home loan",
+        "bot": "For Home Loan",
+        "intent": "loan_type_home"
+      },
+      {
+        "user": "cards",
+        "bot": "Do you need Credit Card or Debit Card?",
+        "intent": "cards_menu"
+      },
+      {
+        "user": "credit card",
+        "bot": "Credit Card: You can check limit",
+        "intent": "card_type_credit"
+      },
+      {
+        "user": "apply for credit card",
+        "bot": "Share Name",
+        "intent": "credit_apply"
+      },
+      {
+        "user": "maheswari devi",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      },
+      {
+        "user": "explain about education loan",
+        "bot": "\ud83d\udcd8 Education Loan helps students with fees",
+        "intent": "loan_edu_details"
+      },
+      {
+        "user": "apply for education loan",
+        "bot": "Please provide Name",
+        "intent": "loan_edu_apply"
+      },
+      {
+        "user": "maheswari",
+        "bot": "I can only assist with banking questions. Try asking about balance, transfers, loans, or cards.",
+        "intent": "out_of_scope"
+      }
+    ],
+    "amount": "5000",
+    "person": "it",
+    "last_amount": "5000",
+    "last_recipient": "it"
+  }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Check Balance</title>
+  <style>
+    :root{ --navy:#1a3c6c; --navy-2:#2e5a9a; --accent:#5b7cff; --bg:#f0f4f8; --card:#fff; --text:#333; --muted:#6b7280; }
+    html,body{ height:100%; margin:0; background:linear-gradient(180deg,var(--bg),#eef6fb); font-family:Inter,Segoe UI,Arial; color:var(--text); display:flex; align-items:center; justify-content:center; padding:20px; }
+    .container{ width:100%; max-width:600pxpx; }
+    .card{ background:var(--card); border-radius:14px; padding:28px; box-shadow:0 20px 50px rgba(10,20,40,0.08); }
+    h1{ margin:0 0 20px; color:var(--navy); font-size:24px; }
+    .form-group{ margin-bottom:14px; }
+    label{ display:block; margin-bottom:6px; color:var(--muted); font-weight:600; font-size:14px; }
+    input{ width:100%; padding:10px 12px; border-radius:10px; border:1px solid #eef3fb; font-size:14px; }
+    .btn{ width:100%; padding:12px; border-radius:12px; font-weight:700; border:0; cursor:pointer; background:linear-gradient(90deg,var(--navy-2),var(--accent)); color:#fff; margin-top:12px; transition:transform .12s; }
+    .btn:hover{ transform:translateY(-2px); }
+    .result-box{ margin-top:22px; padding:22px; background:linear-gradient(135deg,#f0f4ff,#f8faff); border-radius:12px; border-left:6px solid var(--navy-2); display:none; text-align:center; }
+    .result-box.show{ display:block; }
+    .result-label{ color:var(--muted); font-size:14px; margin-bottom:8px; font-weight:600; }
+    .result-amount{ font-size:36px; font-weight:800; color:var(--navy); }
+    .result-error{ color:#c00; }
+    .btn-return{ background:linear-gradient(90deg,#6b7280,#4b5563); margin-top:12px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Check Balance</h1>
+      <form method="post" action="{{ url_for('check_balance') }}">
+        <div class="form-group">
+          <label>Account Number</label>
+          <input type="text" name="account_number" placeholder="Enter your account number" required>
+        </div>
+        <button class="btn" type="submit">Check Balance</button>
+      </form>
+
+      {% if balance %}
+        <div class="result-box show">
+          <div class="result-label">Your Balance</div>
+          {% if balance is string and 'not found' in balance %}
+            <div class="result-amount result-error">{{ balance }}</div>
+          {% else %}
+            <div class="result-amount">₹ {{ balance }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <button class="btn btn-return" onclick="location.href='{{ url_for('dashboard') }}'">Return to Dashboard</button>
+    </div>
+  </div>
+</body>
+</html>
